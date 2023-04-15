@@ -1,0 +1,124 @@
+@use '../variables'
+
+.Navbar
+    display: flex
+    background: black
+    align-items: center
+    width: 100%
+    border-bottom: 1px solid variables.$yellow-900
+    height: 50px
+
+
+    .Logotype
+        color: variables.$yellow-400
+        font-size: 2rem
+        margin-left: 0.5rem
+
+    .Separator
+        display: flex
+        flex: 1
+        justify-content: end
+
+        button
+            display: flex
+            align-items: center
+            justify-content: center
+
+            padding: 0.2rem 0.8rem
+            border: 2px solid variables.$yellow-400
+            border-radius: 8px
+            background: black
+            cursor: pointer
+
+
+            svg
+                width: 100%
+                display: flex
+                align-items: center
+                justify-content: center
+                font-size: 2rem
+                color: variables.$yellow-400
+
+    .NavbarItemsShow
+        position: absolute
+        z-index: 999999
+        top: 50px
+        width: 300px
+        height: calc( 100vh - 50px )
+        border-right: 2px solid variables.$yellow-400
+        background-color: black
+        animation: normal show 0.5s ease-in-out
+        left: 0
+
+
+
+    .NavbarItemsHide
+        position: absolute
+        z-index: 1
+        top: 50px
+        width: 300px
+        transition: 2s
+        border-right: 2px solid variables.$yellow-400
+        height: calc( 100vh - 50px )
+        background-color: black
+        animation: normal hide 0.5s ease-in-out
+        left: -100vw
+
+    .CloseDiv
+        display: flex
+        width: 100%
+        justify-content: end
+
+        button
+            display: flex
+            align-items: center
+            justify-content: center
+            color: variables.$yellow-400
+            font-size: 1.5rem
+
+            padding: 0.2rem 0.8rem
+            border: none
+            background: black
+            cursor: pointer
+
+    .NavbarLista
+            padding-top: 1rem
+            padding-left: 0.5rem
+            width: 100%
+            list-style: none
+            text-decoration: none
+
+
+            li
+                display: flex
+                align-items: center
+                color: #fff
+                height: 45px
+                cursor: pointer
+                transition: 0.5s ease-in-out
+                margin: 0.2rem 0
+                border-bottom: 1px solid transparent
+                &:hover
+                    border-color: variables.$yellow-400
+
+
+
+@keyframes show
+    0%
+        top: 50px
+        left: -100vw
+
+    100%
+        top: 50px
+        left: 0
+
+
+
+@keyframes hide
+    0%
+        top: 50px
+        left: 0
+
+    100%
+        top: 50px
+        left: -100vw
