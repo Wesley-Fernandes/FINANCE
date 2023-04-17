@@ -11,5 +11,8 @@
   <li>React Icons</li>
   <li>Zustand</li>
 </ul>
+
+<h2>Atualizações</h2>
+- [ ] teste
   
 <p>Todo projeto é criado unicamente por mim, desde o design.</p>
