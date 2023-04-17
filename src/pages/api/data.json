@@ -1,138 +1,155 @@
 [
   {
     "id": 1,
-    "cliente": "João da Silva",
-    "status": "RECEBER",
-    "data_pedido": "14/04/2023",
-    "horas": "6h",
-    "valor": 100
+    "finish": true,
+    "client": "João da Silva",
+    "status": "RECEBER DINHEIRO",
+    "order": "14/04/2023",
+    "hours": "6",
+    "value": 100
   },
   {
     "id": 2,
-    "cliente": "Maria Oliveira",
-    "status": "PAGAR",
-    "data_pedido": "15/04/2023",
-    "horas": "7h",
-    "valor": 80
+    "finish": true,
+    "client": "Maria Oliveira",
+    "status": "FAZER HORARIO",
+    "order": "15/04/2023",
+    "hours": "7",
+    "value": 80
   },
   {
     "id": 3,
-    "cliente": "Carlos Pereira",
-    "status": "RECEBER",
-    "data_pedido": "16/04/2023",
-    "horas": "8h",
-    "valor": 120
+    "finish": true,
+    "client": "Carlos Pereira",
+    "status": "RECEBER DINHEIRO",
+    "order": "16/04/2023",
+    "hours": "8",
+    "value": 120
   },
   {
     "id": 4,
-    "cliente": "Ana Santos",
-    "status": "PAGAR",
-    "data_pedido": "17/04/2023",
-    "horas": "9h",
-    "valor": 90
+    "finish": true,
+    "client": "Ana Santos",
+    "status": "TROCAR HORARIO",
+    "order": "17/04/2023",
+    "hours": "9",
+    "value": 90
   },
   {
     "id": 5,
-    "cliente": "Pedro Fernandes",
-    "status": "RECEBER",
-    "data_pedido": "18/04/2023",
-    "horas": "10h",
-    "valor": 140
+    "finish": true,
+    "client": "Pedro Fernandes",
+    "status": "RECEBER DINHEIRO",
+    "order": "18/04/2023",
+    "hours": "10",
+    "value": 140
   },
   {
     "id": 6,
-    "cliente": "Juliana Almeida",
-    "status": "PAGAR",
-    "data_pedido": "19/04/2023",
-    "horas": "11h",
-    "valor": 70
+    "finish": true,
+    "client": "Juliana Almeida",
+    "status": "FAZER HORARIO",
+    "order": "19/04/2023",
+    "hours": "11",
+    "value": 70
   },
   {
     "id": 7,
-    "cliente": "Lucas Ribeiro",
-    "status": "RECEBER",
-    "data_pedido": "20/04/2023",
-    "horas": "12h",
-    "valor": 110
+    "finish": true,
+    "client": "Lucas Ribeiro",
+    "status": "RECEBER DINHEIRO",
+    "order": "20/04/2023",
+    "hours": "12",
+    "value": 110
   },
   {
     "id": 8,
-    "cliente": "Simone Santos",
-    "status": "PAGAR",
-    "data_pedido": "21/04/2023",
-    "horas": "6h",
-    "valor": 100
+    "finish": true,
+    "client": "Simone Santos",
+    "status": "FAZER HORARIO",
+    "order": "21/04/2023",
+    "hours": "6",
+    "value": 100
   },
   {
     "id": 9,
-    "cliente": "Rafaela Lima",
-    "status": "RECEBER",
-    "data_pedido": "22/04/2023",
-    "horas": "7h",
-    "valor": 130
+    "finish": true,
+    "client": "Rafaela Lima",
+    "status": "RECEBER DINHEIRO",
+    "order": "22/04/2023",
+    "hours": "7",
+    "value": 130
   },
   {
     "id": 10,
-    "cliente": "Fernando Costa",
-    "status": "PAGAR",
-    "data_pedido": "23/04/2023",
-    "horas": "8h",
-    "valor": 90
+    "finish": true,
+    "client": "Fernando Costa",
+    "status": "FAZER HORARIO",
+    "order": "23/04/2023",
+    "hours": "8",
+    "value": 90
   },
   {
     "id": 11,
-    "cliente": "Mateus Santos",
-    "status": "RECEBER",
-    "data_pedido": "24/04/2023",
-    "horas": "9h",
-    "valor": 120
+    "finish": true,
+    "client": "Mateus Santos",
+    "status": "RECEBER DINHEIRO",
+    "order": "24/04/2023",
+    "hours": "9",
+    "value": 120
   },
   {
     "id": 12,
-    "cliente": "Aline Ribeiro",
-    "status": "PAGAR",
-    "data_pedido": "25/04/2023",
-    "horas": "10h",
-    "valor": 70
+    "finish": true,
+    "client": "Aline Ribeiro",
+    "status": "FAZER HORARIO",
+    "order": "25/04/2023",
+    "hours": "10",
+    "value": 70
   },
   {
     "id": 13,
-    "cliente": "Renata Oliveira",
-    "status": "RECEBER",
-    "data_pedido": "26/04/2023",
-    "horas": "11h",
-    "valor": 140
+    "finish": true,
+    "client": "Renata Oliveira",
+    "status": "RECEBER DINHEIRO",
+    "order": "26/04/2023",
+    "hours": "11",
+    "value": 140
   },
   {
     "id": 14,
-    "cliente": "Gustavo Pereira",
-    "status": "PAGAR",
-    "data_pedido": "27/04/2023",
-    "horas": "12h",
-    "valor": 80
+    "finish": true,
+    "client": "Gustavo Pereira",
+    "status": "FAZER HORARIO",
+    "order": "27/04/2023",
+    "hours": "12",
+    "value": 80
   },
   {
     "id": 15,
-    "cliente": "Carla Fernandes",
-    "status": "RECEBER",
-    "data_pedido": "28/04/2023",
-    "horas": "6h",
-    "valor": 110
+    "finish": true,
+    "client": "Carla Fernandes",
+    "status": "RECEBER DINHEIRO",
+    "order": "28/04/2023",
+    "hours": "6",
+    "value": 110
   },
   {
     "id": 16,
-    "cliente": "Paulo Santos",
-    "status": "PAGAR",
-    "data_pedido": "29/04/2023",
-    "horas": "7h",
-    "valor": 90
+    "finish": true,
+    "client": "Paulo Santos",
+    "status": "FAZER HORARIO",
+    "order": "29/04/2023",
+    "hours": "7",
+    "value": 90
   },
   {
     "id": 17,
-    "cliente": "Mariana Ribeiro",
-    "status": "RECEBER",
-    "data_pedido": "30/04/2023",
-    "horas": "8h",
-    "valor": 120
+    "finish": true,
+    "client": "Mariana Ribeiro",
+    "status": "RECEBER DINHEIRO",
+    "order": "30/04/2023",
+    "hours": "8",
+    "value": 120
   }
 ]

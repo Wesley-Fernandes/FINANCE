@@ -4,11 +4,11 @@ import type { NextApiRequest, NextApiResponse } from 'next'
 
 export interface IData{
   id: number;
-  cliente: string;
+  client: string;
   status: string;
-  data_pedido: string;
-  horas: string;
-  valor: number
+  order: string;
+  hours: string;
+  value: number
 }
 
 export default function handler(

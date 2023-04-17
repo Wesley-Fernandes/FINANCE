@@ -1,3 +1,4 @@
+@use '../variables'
 .Page
     display: flex
     justify-content: center
@@ -7,7 +8,7 @@
     width: 100%
 
 
-    background-color: black
+    background: linear-gradient(variables.$blue-600, variables.$blue-100)
 
     .Formulary
         width: 500px
@@ -15,6 +16,20 @@
         display: flex
         flex-direction: column
 
-        input
-            height: 50px
+        h1
+            text-align: center
+            text-transform: uppercase
+            font-weight: bold
+            color: variables.$blue-100
+            text-shadow: 0 2px 1px variables.$blue-600
+
+        p
             padding: 0.5rem
+            background-color: variables.$blue-100
+            color: variables.$blue-600
+            border-radius: 5px
+
+        label
+            color: variables.$blue-100
+            font-weight: bold
+            text-shadow: 0 1px 1px variables.$blue-600

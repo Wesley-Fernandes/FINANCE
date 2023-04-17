@@ -1,3 +1,4 @@
+@use '../variables'
 .Tables
     width: 200px
     height: calc( 100vh -  200px - 40.5px)
@@ -11,16 +12,18 @@
 
 
     .TableLines
-        width: 100%
         display: flex
         flex: 1
+        &:hover
+            background-color: variables.$blue-100
 
         .Line
             width: 25%
+            display: flex
+            align-items: center
+            justify-content: center
             &:first-child
                 width: fit-content
-        tr
-            width: 25%
 
 
     .ButtonSvg

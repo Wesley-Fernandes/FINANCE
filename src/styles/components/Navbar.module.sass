@@ -1,16 +1,16 @@
 @use '../variables'
 
 .Navbar
+    position: relative
+    z-index: 2
     display: flex
-    background: black
+    background: variables.$blue-600
     align-items: center
     width: 100%
-    border-bottom: 1px solid variables.$yellow-900
     height: 50px
 
-
     .Logotype
-        color: variables.$yellow-400
+        color: variables.$blue-100
         font-size: 2rem
         margin-left: 0.5rem
 
@@ -25,11 +25,10 @@
             justify-content: center
 
             padding: 0.2rem 0.8rem
-            border: 2px solid variables.$yellow-400
+            border: 2px solid variables.$blue-100
             border-radius: 8px
-            background: black
+            background: variables.$blue-600
             cursor: pointer
-
 
             svg
                 width: 100%
@@ -37,7 +36,7 @@
                 align-items: center
                 justify-content: center
                 font-size: 2rem
-                color: variables.$yellow-400
+                color: variables.$blue-100
 
     .NavbarItemsShow
         position: absolute
@@ -45,22 +44,27 @@
         top: 50px
         width: 300px
         height: calc( 100vh - 50px )
-        border-right: 2px solid variables.$yellow-400
-        background-color: black
+        border-top: 2px solid variables.$blue-100
+        border-right: 2px solid variables.$blue-100
+        background-color: variables.$blue-600
+        filter: drop-shadow(0 0 10px variables.$blue-100)
+        border-radius: 0 15px 0 0
         animation: normal show 0.5s ease-in-out
+        overflow: hidden
         left: 0
-
-
 
     .NavbarItemsHide
         position: absolute
         z-index: 1
         top: 50px
+        height: calc( 100vh - 50px )
         width: 300px
         transition: 2s
-        border-right: 2px solid variables.$yellow-400
-        height: calc( 100vh - 50px )
-        background-color: black
+        border-top: 2px solid variables.$blue-100
+        border-right: 2px solid variables.$blue-100
+        background-color: variables.$blue-600
+        border-radius: 0 15px 0 0
+        overflow: hidden
         animation: normal hide 0.5s ease-in-out
         left: -100vw
 
@@ -73,35 +77,46 @@
             display: flex
             align-items: center
             justify-content: center
-            color: variables.$yellow-400
+            color: variables.$blue-100
             font-size: 1.5rem
 
-            padding: 0.2rem 0.8rem
+            padding: 0.8rem 0.8rem
             border: none
-            background: black
+            background: variables.$blue-600
             cursor: pointer
 
     .NavbarLista
-            padding-top: 1rem
-            padding-left: 0.5rem
-            width: 100%
-            list-style: none
-            text-decoration: none
+        padding-top: 1rem
+        padding-left: 0.5rem
+        width: 100%
+        list-style: none
+        text-decoration: none
 
-
-            li
+        li
                 display: flex
+                height: 45px
                 align-items: center
                 color: #fff
-                height: 45px
                 cursor: pointer
                 transition: 0.5s ease-in-out
                 margin: 0.2rem 0
-                border-bottom: 1px solid transparent
+                text-decoration: none
+                border-left: 4px solid transparent
                 &:hover
-                    border-color: variables.$yellow-400
-
-
+                    background: variables.$blue-100
+                    text-indent: 15px
+                    border-color: variables.$blue-500
+                a
+                    display: flex
+                    font-weight: bolder
+                    align-items: center
+                    text-decoration: none
+                    height: 100%
+                    flex: 1
+                    color: variables.$blue-100
+                    &:hover
+                        color: variables.$blue-500
+                        text-indent: 15px
 
 @keyframes show
     0%
@@ -111,8 +126,6 @@
     100%
         top: 50px
         left: 0
-
-
 
 @keyframes hide
     0%

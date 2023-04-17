@@ -1,12 +1,20 @@
-import React, { useState, useRef} from 'react'
+import React, { useState, useRef, useEffect} from 'react'
 import {TbPigMoney} from 'react-icons/tb'
+
+import { supabase } from '@/supabase/supabase'
 import style from '../../styles/components/Navbar.module.sass'
 
 import {BiMenu} from "react-icons/bi"
 import {IoClose} from "react-icons/io5"
 import Link from 'next/link'
+import LoggedList from './LoggedList'
+
+import { userContext } from '@/contexts/userContext'
+
+
 export default function Navbar() {
   const [modal, setModal] = useState<boolean>(false)
+  const {userInfo} = userContext()
   const button = useRef<HTMLButtonElement>(null)
 
 
@@ -24,6 +32,10 @@ export default function Navbar() {
   function buttonClick(){
     button.current?.click();
   }
+
+  useEffect(()=>{
+    console.log(userInfo)
+  },[])
   return (
     <nav className={style.Navbar}>
         <TbPigMoney className={style.Logotype}/>
@@ -41,22 +53,9 @@ export default function Navbar() {
                   <IoClose/>
                 </button>
               </div>
-              <ul className={style.NavbarLista}>
-                <li>
-                  <Link href={"/Dashboard"}>
-                    Dashboard
-                  </Link>
-                </li>
-                <li>
-                  <Link href={"/NewReceive"}>
-                    Nova receita
-                  </Link>
-                </li>
-                <li>Adicionar nova receita</li>
-                <li>Adicionar nova receita</li>
-                <li>Adicionar nova receita</li>
-                <li>Adicionar nova receita</li>
-              </ul>
+              {
+                userInfo?.token?(<LoggedList/>):(<></>)
+              }
         </div>
     </nav>
   )
