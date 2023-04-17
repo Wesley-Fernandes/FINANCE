@@ -12,7 +12,25 @@
   <li>Zustand</li>
 </ul>
 
-<h2>Atualizações</h2>
-- [ ] teste
-  
+### Atualizações
+- [ ] Design das paginas.
+  - [x] Homepage.
+  - [x] Dashboard.
+  - [x] Nova receita.
+  - [ ] Pesquisas.
+- [ ] Desenvolvimento de paginas.
+  - [x] Homepage.
+  - [x] Dashboard.
+  - [x] Nova receita.
+  - [ ] Pesquisas.
+- [x] Configuração do supabase.
+- [ ] Proteção de rotas privadas.
+- [x] Separar typografia em uma pasta.
+- [x] Configuração do supabase.
+- [x] Configuração do bootstrap.
+- [x] Configuração do sass.
+  - [x] Configuração de paleta de cores.
+  - [x] Configuração de mixings.
+- [x] Configuração do bootstrap.
+- [x] Configurar gerenciamento de estado com Zustand.
 <p>Todo projeto é criado unicamente por mim, desde o design.</p>
