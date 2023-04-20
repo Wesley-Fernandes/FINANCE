@@ -14,9 +14,14 @@ import { userContext } from '@/contexts/userContext'
 
 export default function Navbar() {
   const [modal, setModal] = useState<boolean>(false)
+  const [authorization, setAuthorization] = useState<string|undefined>('')
   const {userInfo} = userContext()
   const button = useRef<HTMLButtonElement>(null)
 
+  async function getSession(){
+    const session = await supabase.auth.getSession();
+    setAuthorization(session.data.session?.access_token)
+  }
 
   function modalToogle(){
     switch (modal){
@@ -34,7 +39,7 @@ export default function Navbar() {
   }
 
   useEffect(()=>{
-    console.log(userInfo)
+    getSession();
   },[])
   return (
     <nav className={style.Navbar}>
@@ -54,7 +59,7 @@ export default function Navbar() {
                 </button>
               </div>
               {
-                userInfo?.token?(<LoggedList/>):(<></>)
+                authorization ?(<LoggedList/>):(<></>)
               }
         </div>
     </nav>

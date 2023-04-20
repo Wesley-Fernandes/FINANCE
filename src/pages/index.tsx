@@ -50,6 +50,7 @@ export default function Home() {
         if(!data.session){
           throw new Error("Withot user data!")
         }
+        localStorage.setItem('FinanceToken', data.session.access_token)
         setUserInfo({
           token: data.session.access_token,
           user: data.session.user

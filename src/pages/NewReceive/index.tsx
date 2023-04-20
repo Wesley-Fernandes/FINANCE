@@ -15,7 +15,7 @@ export default function NewReceive() {
 
         <select
           id="Cliente"
-          className="form-select mb-3"
+          className="form-select mb-3 p-3"
           aria-label="Default select example">
             <option selected disabled>Selecione o nome do cliente
             </option>
@@ -26,7 +26,7 @@ export default function NewReceive() {
 
         <select
           id="Cliente"
-          className="form-select mb-3"
+          className="form-select mb-3 p-3"
           aria-label="Default select example">
             <option selected disabled>Metodo de pagamento
             </option>
@@ -42,7 +42,9 @@ export default function NewReceive() {
           </label>
           <input
             type="date"
-            className="form-control" id="exampleFormControlInput1" placeholder="name@example.com"/>
+            className="form-control p-3"
+            id="exampleFormControlInput1"
+            placeholder="name@example.com"/>
         </div>
 
         <div className="mb-3">
@@ -53,10 +55,14 @@ export default function NewReceive() {
           </label>
           <input
             type="number"
-            className="form-control" id="exampleFormControlInput1" placeholder="Exemplo: 6"/>
+            className="form-control p-3"
+            id="exampleFormControlInput1"
+            placeholder="Exemplo: 6"/>
         </div>
 
-        <button className='btn btn-primary'>Criar</button>
+        <button className='btn btn-primary p-3'>
+          Criar
+        </button>
       </form>
 
     </div>
