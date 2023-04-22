@@ -23,7 +23,6 @@
   - [x] Dashboard.
   - [x] Nova receita.
   - [ ] Pesquisas.
-- [x] Configuração do supabase.
 - [ ] Proteção de rotas privadas.
 - [x] Separar typografia em uma pasta.
 - [x] Configuração do supabase.
